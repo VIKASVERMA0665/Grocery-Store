@@ -1,5 +1,24 @@
-import React,{useState}from"react";import{createRoot}from"react-dom/client";import{initializeApp}from"firebase/app";import{getFirestore}from"firebase/firestore";import{getStorage}from"firebase/storage";import"./styles.css";
+import React,{useState}from"react";
+import{createRoot}from"react-dom/client";
+import{initializeApp}from"firebase/app";
+import{getAnalytics}from"firebase/analytics";
+import{getFirestore}from"firebase/firestore";
+import{getStorage}from"firebase/storage";
+import"./styles.css";
 
+const firebaseConfig={
+  apiKey:"AIzaSyBW4Gqi8poz037AoMFZWhgGGOebuLgXwIs",
+  authDomain:"atharva-store-online.firebaseapp.com",
+  projectId:"atharva-store-online",
+  storageBucket:"atharva-store-online.firebasestorage.app",
+  messagingSenderId:"482473558807",
+  appId:"1:482473558807:web:8480ae69cf3f77c3206d52",
+  measurementId:"G-4JQ3W27NB5"
+};
+const app=initializeApp(firebaseConfig);
+const analytics=getAnalytics(app);
+const db=getFirestore(app);
+const storage=getStorage(app);
 const cats=[["Grocery","🛒"],["Fresh Food","🥬"],["Dairy & Bakery","🥛"],["Beverages","🥤"],["Snacks & Packaged Food","🍿"],["Frozen Food","❄️"],["Home & Kitchen","🏠"],["Personal Care","🧴"],["Household","🧹"],["Stationery","✏️"],["Travel","🧳"],["Baby Care","🍼"]];
 const subs=["Dals & Pulses","Cooking Oil","Rice","Atta & Flours","Spices & Masala","Fruits","Vegetables","Milk","Curd & Yogurt","Butter & Cheese","Bread & Bakery","Tea & Coffee","Juices","Biscuits","Chips & Namkeen","Chocolates","Noodles","Frozen Snacks","Ice Cream","Cleaning","Kitchen Tools","Bath & Body","Hair Care","Oral Care","Laundry","School Supplies","Bags & Luggage","Diapers"];
 const products=[["Fresh Bananas","1 kg",45,55,"🍌"],["Fresh Tomatoes","1 kg",38,48,"🍅"],["Full Cream Milk","1 litre",68,72,"🥛"],["Brown Bread","400 g",45,50,"🍞"],["Basmati Rice","5 kg",399,450,"🍚"],["Wheat Atta","5 kg",249,285,"🌾"],["Potato Chips","120 g",30,35,"🥔"],["Orange Juice","1 litre",99,120,"🧃"],["Dishwash Liquid","500 ml",109,135,"🧽"],["Bath Soap","4 x 100 g",155,180,"🧼"],["Tea","500 g",245,280,"🍵"],["Baby Diapers","30 pcs",499,560,"🍼"]];
