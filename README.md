@@ -1,6 +1,6 @@
-# Grocery Store
+# Atharva Store
 
-Production-oriented React/Vite grocery storefront for the Grocery-Store repository.
+Production-oriented React/Vite grocery storefront for the Atharva-Store repository.
 
 Run:
 npm install
