@@ -1,27 +1,11 @@
-# Grocery Store
+# ApnaFreshBasket
 
-A responsive online grocery storefront built for the Grocery-Store project.
+Working React/Vite grocery storefront for the Grocery-Store repository.
 
-### Included now
-- Mobile-first responsive storefront
-- Grocery categories
-- Product catalog
-- Search
-- Category filters
-- Shopping cart with quantity controls
-- Persistent cart using browser storage
-- SEO title and description
-- Clean foundation for Firebase and real checkout
+Run:
+npm install
+npm run dev
 
-### Production roadmap
-- Firebase Authentication
-- Firestore products, categories and inventory
-- Admin dashboard
-- Customer accounts and order history
-- Address and delivery-slot management
-- Payment gateway
-- Coupons and offers
-- Order notifications
-- Firebase Hosting
+Firebase project: apnabasket-8d4fe
 
-Repository: https://github.com/VIKASVERMA0665/Grocery-Store
+The frontend is connected to the Firebase SDK for Firestore and Storage initialization. Production work will connect real product/customer/order data, secure custom authentication with the selected OTP provider, payment gateway, and admin panel.
