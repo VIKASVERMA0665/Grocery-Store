@@ -63,5 +63,4 @@ function App(){
  {login&&<div className="modal"><div><button className="x" onClick={()=>setLogin(false)}>×</button><h2>Customer Login</h2><input placeholder="Mobile number"/><input type="password" placeholder="Password"/><button className="primary">Login</button><p>Customer authentication will be connected separately.</p></div></div>}
  {adminLogin&&<div className="modal"><div><button className="x" onClick={()=>setAdminLogin(false)}>×</button><h2>Admin Login</h2><input type="email" value={adminEmail} onChange={e=>setAdminEmail(e.target.value)} placeholder="Admin email"/><input type="password" value={adminPassword} onChange={e=>setAdminPassword(e.target.value)} placeholder="Password"/>{adminError&&<p>{adminError}</p>}<button className="primary" onClick={adminSignIn}>Login</button></div></div>}
  </>}
-}
 createRoot(document.getElementById("root")).render(<App/>);
